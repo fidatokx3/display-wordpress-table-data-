@@ -1,0 +1,15 @@
+<?php
+  global $wpdb;
+  $tableName4caption  = $wpdb->prefix . "negotiators";
+
+      $testing = $wpdb->get_results("select * from $tableName4caption WHERE  id = $idNegotiator ");
+      foreach ($testing as $test) {
+         
+      
+         echo "Your Seleted Number &nbsp;  : &nbsp;" ."<p id='captionp'>". $test->caption  . "</p>" ; 
+          
+      
+     
+      } 
+
+?>
